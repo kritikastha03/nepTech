@@ -16,8 +16,8 @@ const Footer = () => {
           <p>Images to pdf</p>
         </div>
         <div>
-          <h1 className="text-lg font-bold">Hello.</h1>
-          <h3>I am Kritika</h3>
+          <h1 className="text-xl font-bold">Hello.</h1>
+          <h3>I am Digital Book.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur.
           </p>

@@ -4,7 +4,7 @@ import Card from "./Components/Card";
 const page = () => {
   return (
     <>
-      <div>
+      <div className="flex flex-col gap-5">
         <Card />
         <Card />
         <Card />

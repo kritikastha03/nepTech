@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Header = () => {
   return (
     <>
-        <nav className='border-3 border-black flex justify-between px-10 py-2  bg-primary rounded sticky top-0'>
+        <nav className=' bg-gray-600 flex justify-between px-10 py-2 rounded sticky top-0'>
         <div>
           <Image
             src="/macintosh.png"
@@ -13,7 +13,7 @@ const Header = () => {
             height={50}
           />
         </div>
-        <div className='flex gap-5 mt-2 text-neutral-content'>
+        <div className='flex gap-10 mt-2 text-xl  font-bold text-neutral-content'>
             <Link href="/">Home</Link>
             <Link href="/About">About</Link>
             <Link href="/Contact">Contact</Link> 
