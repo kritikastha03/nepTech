@@ -27,7 +27,7 @@ const Card = () => {
               src="/images.jpg"
               width={600}
               height={400}
-              className="rounded"
+              className="rounded-md"
             />
           </div>
         </div>
@@ -37,7 +37,7 @@ const Card = () => {
               src="/images.jpg"
               width={600}
               height={400}
-              className="rounded"
+              className="rounded-md"
             />
           </div>
           <div className="w-3/6 p-3 text-lg">
