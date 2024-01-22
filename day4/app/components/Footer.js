@@ -3,11 +3,12 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="h-screen ">
-        <div className="grid grid-cols-4">
+      <hr className="border-yellow-500 border-[1.5px] mt-14"/>
+      <footer className="mt-10">
+        <div className="grid grid-cols-4 ml-14">
           <div className="inline-block">
-            Productivity
-            <ul>
+            <h1 className="text-lg font-bold mb-6">Productivity</h1>
+            <ul className="flex flex-col gap-3 text-[13px]">
               <li>AI Image Enhancer</li>
               <li>AI Image Upscaler</li>
               <li>AI Anime Upscaler</li>
@@ -23,8 +24,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            Creativity
-            <ul>
+            <h1 className="text-lg font-bold mb-6">Creativity</h1>
+            <ul className="flex flex-col gap-3 text-[13px]">
               <li>AI Photo Restorer</li>
               <li>Toongineer Cartoonizer</li>
               <li>VansPortrait</li>
@@ -33,8 +34,8 @@ const Footer = () => {
               <li>AI Art Generator</li>
             </ul>
             <div>
-              AIGC
-              <ul>
+              <h1 className="text-lg font-bold my-6">AIGC</h1>
+              <ul className="flex flex-col gap-3 text-[13px]">
                 <li>AI Face Generator</li>
                 <li>AI Portrait Generator</li>
                 <li>Vtuber Maker</li>
@@ -43,8 +44,8 @@ const Footer = () => {
           </div>
 
           <div>
-            Editing
-            <ul>
+            <h1 className="text-lg font-bold mb-6">Editing</h1>
+            <ul className="flex flex-col gap-3 text-[13px]">
               <li>Photo Editor</li>
               <li>Image Cropper</li>
               <li>Image Resizer</li>
@@ -52,14 +53,14 @@ const Footer = () => {
               <li>Image Flipper</li>
             </ul>
             <div>
-              Video
-              <ul>
+              <h1 className="text-lg font-bold my-6">Video</h1>
+              <ul className="flex flex-col gap-3 text-[13px]">
                 <li>AI Video Enhancer</li>
               </ul>
             </div>
             <div>
-              Generate Product Image
-              <ul>
+             <h1 className="text-lg font-bold my-6">Generate Product Image</h1>
+              <ul className="flex flex-col gap-3 text-[13px]">
                 <li>AI Background Generator</li>
                 <li>AI Fashion Model Generator</li>
               </ul>
@@ -67,8 +68,8 @@ const Footer = () => {
           </div>
 
           <div>
-            Support
-            <ul>
+           <h1 className="text-lg font-bold mb-6">Support</h1>
+            <ul className="flex flex-col gap-3 text-[13px]">
               <li>API Documents</li>
               <li>Configuration Generator</li>
               <li>Help & FAQ</li>
@@ -79,8 +80,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="h-40 bg-gray-400">
-          <p>All Rights Reserved.</p>
+        
+        <div className="h-32 mt-10 bg-gray-300 flex justify-center items-center">
+          <p className="text-sm text-gray-500">Copyright © 2024 VanceAI Technology. All Rights Reserved.</p>
         </div>
       </footer>
     </>

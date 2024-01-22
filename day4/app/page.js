@@ -5,6 +5,8 @@ import NewRealse from "./components/NewRealse";
 import AIFeatures from "./components/AIFeatures";
 import LeftPage from "./components/LeftPage";
 import RightPage from "./components/RightPage";
+import VanceAI from "./components/VanceAIPC";
+import Review from "./components/Review";
 
 const page = () => {
   return (
@@ -13,6 +15,7 @@ const page = () => {
       <Recomendation />
       <NewRealse />
       <AIFeatures />
+      <VanceAI/>
       <LeftPage
         title="Automatic, Fast, and Smart Photo Processing with AI"
         description="VanceAI aims to boost photo processing with effective AI solutions. All its AI tools are based on Deep Convolutional Neural Networks (DCNN) that are trained on millions of images to enable their smart analysis and fast processing."
@@ -43,6 +46,7 @@ const page = () => {
         description2="AI makes it easy for thoes who need to process photos for any use, like graphic design, photography, printing, e-commerce, and more."
         img="/page_image5.webp"
       />
+      <Review/>
     </div>
   );
 };
