@@ -1,5 +1,5 @@
 import { useFilePicker } from "use-file-picker";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { handleExportImage } from "./components/ImageCollection";
 import {
   FileAmountLimitValidator,
@@ -41,35 +41,37 @@ export default function Filepicker({ url }) {
       </div>
     );
   }
+  
   return (
     <>
-      <div 
+      <div
         className={`${
           !img && "border"
         } border-dashed border-gray-500 flex justify-center items-center w-[40%] h-[400px]`}
       >
-        {!img ? (
-          <button
-            onClick={() => {
-              openFilePicker();
-              setImg(true);
-            }}
-            className="border rounded p-2 border-gray-500 text-gray-700 hover:bg-gray-300 hover:border-none"
-          >
-            Select an image.
-          </button>
+        {url !== "" ? (
+          <img alt="image" src={url} />
         ) : (
+          img === false && (
+            <button
+              onClick={() => {
+                openFilePicker();
+                setImg(true);
+              }}
+              className="border rounded p-2 border-gray-500 text-gray-700 hover:bg-gray-300 hover:border-none"
+            >
+              Select an image.
+            </button>
+          )
+        )}
+        {img !== false && (
           <div>
-            {url !== "" ? (
-              <Image alt="image" src={url} height={300} width={300} />
-            ) : (
-              filesContent.map((file, index) => (
-                <div key={index}>
-                  <Image height={500} width={500} alt={file.name} src={file.content}/>
-                  <br />
-                </div>
-              ))
-            )}
+            {filesContent.map((file, index) => (
+              <div key={index}>
+                <img alt={file.name} src={file.content} />
+                <br />
+              </div>
+            ))}
           </div>
         )}
       </div>

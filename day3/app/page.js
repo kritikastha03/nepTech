@@ -21,16 +21,17 @@ const Page = () => {
   const [selectedImage, setSelectedImage] = useState("");
 
   const handleImageClick = (imageUrl) => {
-    setSelectedImage(imageUrl);
+    setTimeout(() => {
+      setSelectedImage(imageUrl);
+    }, 3000);
   };
-
 
   return (
     <>
       <div>
         <div className="flex gap-5 pl-10">
           <Filepicker url={selectedImage} />
-          <Filepicker />
+          <Filepicker url={selectedImage} />
         </div>
         <hr className="h-px my-10 bg-gray-200 border-0 dark:bg-gray-700" />
         <div className="mx-4">
