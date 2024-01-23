@@ -1,6 +1,6 @@
 import React from "react";
-import Imagediv from "./ImageDiv";
-import Heading from "./Heading";
+import Imagediv from "../ImageDiv";
+import Heading from "../Heading";
 
 const Recomendation = () => {
   return (
