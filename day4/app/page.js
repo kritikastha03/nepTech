@@ -1,12 +1,12 @@
 import React from "react";
-import Home from "./components/Home";
-import Recomendation from "./components/Recomendation";
-import NewRealse from "./components/NewRealse";
-import AIFeatures from "./components/AIFeatures";
-import LeftPage from "./components/LeftPage";
-import RightPage from "./components/RightPage";
-import VanceAI from "./components/VanceAIPC";
-import Review from "./components/Review";
+import Home from "@/components/LandingPageSections/Home";
+import Recomendation from "@/components/LandingPageSections/Recomendation";
+import NewRealse from "@/components/LandingPageSections/NewRealse";
+import AIFeatures from "@/components/LandingPageSections/AIFeatures";
+import LeftPage from "@/components/LandingPageSections/LeftPage";
+import RightPage from "@/components/LandingPageSections/RightPage";
+import VanceAI from "@/components/LandingPageSections/VanceAIPC";
+import Review from "@/components/LandingPageSections/Review";
 
 const page = () => {
   return (
